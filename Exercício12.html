@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 12</title>
+  </head>
+  <body>
+    <script>
+      // Desenvolva um algoritmo que leia 10 números, calcule e escreva a
+      // média aritmética dos valores lidos, a quantidade de valores positivos, a quantidade de valores negativos e o percentual de
+      // valores negativos e positivos.
+
+      let numberpositive = 0;
+      let numbernegative = 0;
+      let number = [];
+      let soma = 0;
+      let media = 0;
+
+      do {
+        //inclui cada numero digitado pelo usuario dentro de um array geral
+        number.push(parseFloat(prompt("Digite um número:")));
+      } 
+      while (number.length < 10);
+
+        for (let contador = 0; contador < 10; contador++) {
+            number.push[contador];
+
+        if (number[contador] > 0) {
+          numberpositive += 1;  
+          soma += number[contador];
+          media = soma / number.length;
+        } else {
+          numbernegative += 1;  
+          soma += number[contador];
+          media = soma / number.length;
+        }
+      }
+
+      let percentPositivo = operacao1(numberpositive, number);
+      let percentNegativo = operacao2(numbernegative, number);
+
+      function operacao1(numberpositive, number) {
+        let result = 0;
+
+        result = (numberpositive / number.length) * 100;
+
+        return parseFloat(result);
+      }
+
+      function operacao2(numbernegative, number) {
+        let result = 0;
+
+        result = (numbernegative / number.length) * 100;
+
+        return parseFloat(result);
+      }
+
+      document.write("A soma total é: " + soma + "<br />");
+      document.write("Sua média é: " + media + "<br />");
+      document.write(
+        "A quantidade de números positivos é: " + numberpositive + "<br />"
+      );
+      document.write(
+        "A quantidade de números negativos é: " + numbernegative + "<br />"
+      );
+      document.write(
+        "O percentual de números positivos é de: " + percentPositivo,
+        "%" + "<br />"
+      );
+      document.write(
+        "O percentual de números positivos é de: " + percentNegativo,
+        "%" + "<br />"
+      );
+    </script>
+  </body>
+</html>

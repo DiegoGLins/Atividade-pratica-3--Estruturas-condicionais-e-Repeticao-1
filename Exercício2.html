@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <!-- Escreva um algoritmo que solicite 2 números e uma operação
+matemática. O algoritmo deve realizar o cálculo com os 2 números
+digitados conforme a operação informada -->
+</body>
+
+<script>
+
+const numberOne = parseFloat(prompt('Digite o primeiro número: '))
+const numberTwo = parseFloat(prompt('Digite o segundo número: '))
+const operacao = prompt('Digite o número de acordo com a operação a ser executada: \n 1 - Soma \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão')
+
+switch (operacao) {
+    case '1':
+    let soma = numberOne + numberTwo;
+    console.log(soma);    
+    break;
+
+    case '2':
+    let subtracao = numberOne - numberTwo;
+    console.log(subtracao);
+    break;
+
+    case '3':
+    let multiplicacao = numberOne * numberTwo;
+    console.log(multiplicacao);
+    break;
+
+    case '4':
+    let divisao = numberOne / numberTwo;
+    console.log(divisao);
+    break;
+
+    default:
+    console.log('Opção inválida. Por favor digite uma opção válida:')     
+    break;
+}
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <!-- Faça um algoritmo que leia a idade e peso de um atleta e imprima
+a sua categoria, de acordo com a seguinte tabela:
+    Idade Peso Categoria
+    Até 12 anos - Infantil
+    13 a 16 anos Até 40kg Juvenil leve
+    Acima de 40kg Juvenil pesado
+    17 a 24 anos Até 45kg Sênior leve
+    Acima de 45kg até 60kg Sênior médio
+    Acima de 60kg Sênior pesado
+    Acima de 24 anos - Veterano -->
+</body>
+
+<script>
+    
+const idade = parseInt(prompt('Digite sua idade: '))
+const peso = parseInt(prompt('Digite seu peso: '))
+
+if(idade <= 12) {
+document.write('Infantil')
+}
+else if (idade >12 && idade <17 && peso <= 40) {
+document.write('Juvenil leve')
+}
+else if (idade >12 && idade <=16 && peso > 40) {
+document.write('Juvenil Pesado')
+}
+else if (idade >16 && idade <25 && peso <= 45) {
+document.write('Senior leve')
+}
+else if (idade >16 && idade <25 && peso >45 && peso<=60){
+document.write('Senior médio')
+}
+else if (idade >16 && idade <25 && peso >60){
+document.write('Senior pesado')
+}
+else if(idade > 24){
+document.write('Veterano')
+}
+
+
+</script>
+</html>
